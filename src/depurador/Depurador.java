@@ -33,8 +33,8 @@ public abstract class Depurador {
 	 */
 	public static void trazar(String mensaje) {
 		if(ACTIVO) {
-			long tiempoEjecucion=System.currentTimeMillis()-inicio;
-			System.err.println(" [TRAZA] ("+tiempoEjecucion+" ms) "+mensaje);
+			long tiempoEjecucion=(System.currentTimeMillis()-inicio);
+			System.err.println("[TRAZA] ("+tiempoEjecucion+" ms) "+mensaje);
 		}
 	}
 
